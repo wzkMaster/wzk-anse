@@ -3,6 +3,7 @@ import { useStore } from '@nanostores/solid'
 import { conversationMapSortList } from '@/stores/conversation'
 import ConversationSidebarItem from './ConversationSidebarItem'
 import ConversationSidebarAdd from './ConversationSidebarAdd'
+import ThemeToggle from '../ui/ThemeToggle'
 
 export default () => {
   const $conversationMapSortList = useStore(conversationMapSortList)
@@ -19,6 +20,9 @@ export default () => {
           )}
         </For>
         <ConversationSidebarAdd />
+      </div>
+      <div style="position: absolute; left: 1em; bottom: 1em">
+        <ThemeToggle />
       </div>
     </div>
   )

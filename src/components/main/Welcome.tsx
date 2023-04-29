@@ -30,7 +30,7 @@ export default () => {
           onClick={() => showConversationEditModal.set(true)}
         >
           <div class="i-carbon-add" />
-          <div class="flex-1 text-sm truncate">New Conversation</div>
+          <div class="flex-1 text-sm truncate">新增对话</div>
         </div>
       </div>
     </div>

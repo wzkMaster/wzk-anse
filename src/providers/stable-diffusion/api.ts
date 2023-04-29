@@ -9,7 +9,7 @@ export const fetchImageGeneration = async(payload: FetchPayload) => {
   const initOptions = {
     headers: {
       'Content-Type': 'application/json',
-      'Authorization': `Token ${payload.token}`,
+      'Authorization': `Token ${payload.token || import.meta.env.STABLE_DIFFUSION_KEY}`,
     },
     method: payload.method || 'GET',
     body: payload.method === 'POST' ? JSON.stringify(payload.body || {}) : undefined,

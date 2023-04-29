@@ -14,9 +14,6 @@ import BuildStores from '@/components/client-only/BuildStores'
       <ConversationSidebar client:load />
     </Sidebar>
     <Main />
-    <Sidebar direction="right" class="hidden lg:block">
-      <Settings client:only />
-    </Sidebar>
   </div>
   <ModalsLayer client:only />
   <BuildStores client:only />
