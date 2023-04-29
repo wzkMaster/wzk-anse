@@ -13,7 +13,7 @@ export const handlePrompt = async(conversation: Conversation, prompt: string, si
   const generalSettings = getGeneralSettings()
   const provider = getProviderById(conversation?.providerId)
   if (!provider) return
-  let callMethod = generalSettings.requestWithBackend ? 'backend' : 'frontend' as 'frontend' | 'backend'
+  let callMethod = 'backend'
   if (provider.supportCallMethod === 'frontend' || provider.supportCallMethod === 'backend')
     callMethod = provider.supportCallMethod
 
