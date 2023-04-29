@@ -107,12 +107,12 @@ export default () => {
 
   const LoadingState = () => (
     <div class="max-w-base h-full fi flex-row gap-2">
-      <div class="flex-1 op-50">Thinking...</div>
+      <div class="flex-1 op-50">生成中...</div>
       <div
         class="border border-darker px-2 py-1 rounded-md text-sm op-40 hv-base hover:bg-white"
         onClick={() => { handleAbortFetch() }}
       >
-        Abort
+        停止
       </div>
     </div>
   )
