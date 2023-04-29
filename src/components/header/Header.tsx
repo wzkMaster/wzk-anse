@@ -16,12 +16,6 @@ export default () => {
       </div>
       <div class="fi gap-1 overflow-hidden">
         <ConversationMessageClearButton />
-        <div
-          class="fcc p-2 rounded-md text-xl hv-foreground lg:hidden"
-          onClick={() => showSettingsSidebar.set(true)}
-        >
-          <div i-carbon-settings />
-        </div>
       </div>
     </header>
   )

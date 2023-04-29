@@ -22,7 +22,7 @@ export const fetchImageGeneration = async(payload: OpenAIFetchPayload) => {
   const initOptions = {
     headers: {
       'Content-Type': 'application/json',
-      'Authorization': `Bearer ${payload.apiKey}`,
+      'Authorization': `Bearer ${payload.apiKey || import.meta.env.OPENAI_API_KEY}`,
     },
     method: 'POST',
     body: JSON.stringify(payload.body),

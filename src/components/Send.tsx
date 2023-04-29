@@ -49,7 +49,7 @@ export default () => {
         inputRef.focus()
       }}
     >
-      <div class="flex-1 op-30">Enter Something...</div>
+      <div class="flex-1 op-30">请输入...</div>
       <div class="i-carbon-send op-50 text-xl" />
     </div>
   )
@@ -58,7 +58,7 @@ export default () => {
     <div class="h-full relative">
       <textarea
         ref={inputRef!}
-        placeholder="Enter something..."
+        placeholder="请输入..."
         autocomplete="off"
         onBlur={() => { isSendBoxFocus.set(false) }}
         onInput={() => { setInputPrompt(inputRef.value) }}

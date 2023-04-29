@@ -57,7 +57,7 @@ export default (props: Props) => {
           onClick={() => scrollRef!.scrollTo({ top: scrollRef.scrollHeight, behavior: 'smooth' })}
         >
           <div class="fcc h-8 max-w-base text-xs op-50 gap-1">
-            <div>Scroll to bottom</div>
+            <div>滚动到底部</div>
             <div i-carbon-arrow-down />
           </div>
         </div>
