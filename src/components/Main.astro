@@ -1,0 +1,19 @@
+---
+import Header from './header/Header'
+import Send from './Send'
+import './transition.css'
+import './prism.css'
+
+import Conversation from './main/Conversation'
+---
+
+<main class="relative flex-1 flex flex-col overflow-hidden bg-base">
+  <Header client:load />
+  <main class="flex-1 mt-14 flex flex-col overflow-hidden">
+    <!-- <ConversationConfiguration /> -->
+    <div class="flex-1 relative overflow-hidden">
+      <Conversation client:only />
+    </div>
+  </main>
+  <Send client:load />
+</main>
